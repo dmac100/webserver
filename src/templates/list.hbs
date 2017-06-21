@@ -1,0 +1,33 @@
+<table class="styled">
+	{{#each .}}
+		<tr>
+			{{#each .}}
+				<th>{{@key}}</th>
+				<td>{{.}}</td>
+			{{/each}}
+		</tr>
+	{{/each}}
+</table>
+
+<br>
+
+<form method="post" action="new">
+	<table>
+		<tr>
+			<td>a:</td>
+			<td><input type="text" name="a"></td>
+		</tr>
+		<tr>
+			<td>b:</td>
+			<td><input type="text" name="b"></td>
+		</tr>
+		<tr>
+			<td>c:</td>
+			<td><input type="text" name="c"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td align="right"><input type="submit" value="Post"></td>
+		</tr>
+	</table>
+</form>
